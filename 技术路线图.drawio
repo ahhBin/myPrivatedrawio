@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="Y5ttv0_aFd752J52-g57">
-    <mxGraphModel dx="1862" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="1220" math="0" shadow="0">
+    <mxGraphModel dx="1078" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="1220" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -32,7 +32,7 @@
           <mxGeometry height="230" width="1010" x="350" y="410" as="geometry" />
         </mxCell>
         <mxCell id="31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#666666;fontColor=#222222;fontSize=15;fontStyle=1;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="研究内容一：单模态场景下的客户端选择" vertex="1">
-          <mxGeometry height="30" width="720" x="460" y="430" as="geometry" />
+          <mxGeometry height="30" width="720" x="460" y="420" as="geometry" />
         </mxCell>
         <mxCell id="32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#666666;fontColor=#222222;fontSize=13;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=6;" value="目标&lt;br&gt;提升每轮参与集合的数据分布多样性&lt;br&gt;缓解单模态场景下的数据异质性" vertex="1">
           <mxGeometry height="155" width="120" x="1220" y="447.5" as="geometry" />
