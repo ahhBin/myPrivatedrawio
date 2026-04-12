@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="Y5ttv0_aFd752J52-g57">
-    <mxGraphModel dx="2276" dy="1311" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="1220" math="0" shadow="0">
+    <mxGraphModel dx="1732" dy="997" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1700" pageHeight="1220" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -47,13 +47,13 @@
           <mxGeometry height="58" width="330" x="460" y="465" as="geometry" />
         </mxCell>
         <mxCell id="36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#666666;fontColor=#222222;fontSize=13;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="构建数据特征表示：&lt;br&gt;均值向量表征和均值-方差向量表征" vertex="1">
-          <mxGeometry height="58" width="340" x="830" y="465" as="geometry" />
+          <mxGeometry height="58" width="330" x="830" y="465" as="geometry" />
         </mxCell>
         <mxCell id="37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#666666;fontColor=#222222;fontSize=13;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="构建描述客户端相似性的核矩阵" vertex="1">
           <mxGeometry height="58" width="330" x="460" y="566" as="geometry" />
         </mxCell>
         <mxCell id="38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#666666;fontColor=#222222;fontSize=13;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="使用 k-DPP 进行客户端子集采样" vertex="1">
-          <mxGeometry height="58" width="340" x="830" y="566" as="geometry" />
+          <mxGeometry height="58" width="330" x="830" y="566" as="geometry" />
         </mxCell>
         <mxCell id="50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;dashed=1;dashPattern=8 4;" value="" vertex="1">
           <mxGeometry height="253.5" width="1010" x="350" y="696.5" as="geometry" />
@@ -62,19 +62,22 @@
           <mxGeometry height="30" width="720" x="460" y="717" as="geometry" />
         </mxCell>
         <mxCell id="52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#666666;fontColor=#222222;fontSize=13;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacing=6;" value="目标&#xa;提升每轮参与集合的任务覆盖能力&#xa;增强多模态场景下的任务多样性" vertex="1">
-          <mxGeometry height="155" width="120" x="1230" y="747" as="geometry" />
+          <mxGeometry height="155" width="120" x="1220" y="747.5" as="geometry" />
         </mxCell>
-        <mxCell id="54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#666666;fontColor=#222222;fontSize=14;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="多模态客户端任务刻画" vertex="1">
-          <mxGeometry height="58" width="240" x="460" y="770" as="geometry" />
+        <mxCell id="54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#666666;fontColor=#222222;fontSize=13;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="提取 LoRA 矩阵 A 行统计信息&lt;div&gt;构建任务特征表示&lt;/div&gt;" vertex="1">
+          <mxGeometry height="58" width="330" x="460" y="770" as="geometry" />
         </mxCell>
-        <mxCell id="55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#666666;fontColor=#222222;fontSize=14;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="构建任务差异性表示" vertex="1">
-          <mxGeometry height="58" width="260" x="720" y="770" as="geometry" />
+        <mxCell id="BJtPWny-oLDogSHN1qJQ-123" edge="1" parent="1" source="55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#666666;fontColor=#222222;fontSize=13;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="矩阵 A 行 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;&lt;br&gt;&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;L_2&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span class=&quot;pstrut&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 范数表征" vertex="1">
+          <mxGeometry height="58" width="330" x="835" y="770" as="geometry" />
         </mxCell>
         <mxCell id="56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f7f7;strokeColor=#666666;fontColor=#222222;fontSize=14;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="引入 k-DPP 进行客户端子集采样" vertex="1">
-          <mxGeometry height="58" width="220" x="1000" y="770" as="geometry" />
+          <mxGeometry height="58" width="330" x="470" y="871" as="geometry" />
         </mxCell>
-        <mxCell id="57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666666;fontColor=#222222;fontSize=14;fontStyle=1;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="形成面向多模态任务的客户端选择策略" vertex="1">
-          <mxGeometry height="58" width="450" x="595" y="871" as="geometry" />
+        <mxCell id="57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666666;fontColor=#222222;fontSize=14;fontStyle=0;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;" value="面向多模态任务的客户端选择策略" vertex="1">
+          <mxGeometry height="58" width="330" x="835" y="871" as="geometry" />
         </mxCell>
         <mxCell id="100" edge="1" parent="1" source="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.6;strokeColor=#555555;" target="20">
           <mxGeometry relative="1" as="geometry" />
@@ -94,13 +97,10 @@
         <mxCell id="120" edge="1" parent="1" source="54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#666666;" target="55">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="121" edge="1" parent="1" source="55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#666666;" target="56">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="122" edge="1" parent="1" source="56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#666666;" target="57">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="123" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#666666;" target="60">
+        <mxCell id="123" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.5;strokeColor=#666666;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="720" y="1037.0000000000005" as="sourcePoint" />
           </mxGeometry>
