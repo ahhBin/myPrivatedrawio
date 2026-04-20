@@ -1,9 +1,54 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="Wjm7p5Iu6J5k84ONYrl9">
-    <mxGraphModel dx="854" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1025" dy="619" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1720" pageHeight="950" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#b85450;fontSize=14;" value="研究问题&lt;br&gt;多模态联邦环境存在数据分布异质性与任务异质性，随机客户端选择难以兼顾代表性与多样性；同时通信与计算资源受限，无法在每轮让全部客户端参与训练。" vertex="1">
+          <mxGeometry height="90" width="880" x="360" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6b656;fontSize=14;fontStyle=1;" value="统一研究框架&lt;br&gt;以联邦学习为协同训练范式，以多模态大模型为任务载体，以 LoRA 为参数高效微调方式，在隐私保护约束下研究客户端选择机制。" vertex="1">
+          <mxGeometry height="80" width="760" x="420" y="199" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=14;fontStyle=1;" value="研究内容一&lt;br&gt;面向单模态数据的客户端选择" vertex="1">
+          <mxGeometry height="70" width="300" x="392" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=13;" value="技术方法&lt;br&gt;利用客户端本地数据表征刻画数据分布特征，构建客户端相似性核矩阵，并结合 k-DPP 进行多样性驱动采样。" vertex="1">
+          <mxGeometry height="100" width="380" x="352" y="443" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=13;" value="算法实现与目标&lt;br&gt;DAVE-CliFL-GM 与 DAVE-CliFL-JSD&lt;br&gt;提升参与集合的数据覆盖能力，缓解统计异质性并加快收敛。" vertex="1">
+          <mxGeometry height="100" width="360" x="362" y="611" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;" value="研究内容二&lt;br&gt;面向多模态数据的客户端选择" vertex="1">
+          <mxGeometry height="70" width="300" x="873" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=13;" value="技术方法&lt;br&gt;从 LoRA 参数更新矩阵的方向特征分析任务异质性，以矩阵 A 的行 L2 范数构建任务表征向量，再结合 k-DPP 进行任务多样性采样。" vertex="1">
+          <mxGeometry height="100" width="400" x="823" y="459" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d79b00;fontSize=13;" value="算法实现与目标&lt;br&gt;FedTD&lt;br&gt;提升参与集合的任务覆盖能力，减弱尾部知识抵消，增强多模态任务适应性与全局性能。" vertex="1">
+          <mxGeometry height="100" width="360" x="843" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_4" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;" target="4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_5" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;" target="5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_8" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;" target="8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_6" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;" target="6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_7" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;" target="7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_9" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;" target="9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9_10" edge="1" parent="1" source="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=1.2;" target="10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
